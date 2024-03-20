@@ -12,9 +12,11 @@ public class UsusarioFactory {
 	}
 
 	public void getInsertaUsusario() {
+		usr.getInsertaUsusario();
 	}
 	
 	public void getEliminaUsuarioByID(int id) {
+		usr.getEliminaUsuarioByID(id);
 	}
 	
 }
