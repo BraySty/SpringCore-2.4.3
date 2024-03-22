@@ -1,21 +1,25 @@
-package Main;
-import Clases.Avion;
-import Clases.Helice;
-import Clases.Turbina;
+package main;
+import java.util.logging.Logger;
+
+import clases.Avion;
+import clases.Helice;
+import clases.Turbina;
 
 public class Main {
 
+	  static Logger logger = Logger.getLogger(Main.class.getClass().getName());
+	
 	public static void main(String[] args) {
 		
 												// Injeccion de dependencias
 		Avion obj1 = new Avion(new Helice());
-		System.out.println(obj1.getMotor());
-		System.out.println(obj1.getPotencia(270));
+		logger.info(obj1.getMotor());
+		logger.info(obj1.getPotencia(270));
 		
 												// Injeccion de dependencias
 		Avion obj2 = new Avion(new Turbina());
-		System.out.println(obj2.getMotor());
-		System.out.println(obj2.getPotencia(540));
+		logger.info(obj2.getMotor());
+		logger.info(obj2.getPotencia(540));
 		
 	}
 	

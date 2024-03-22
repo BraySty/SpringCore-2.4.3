@@ -1,6 +1,6 @@
-package Clases;
+package clases;
 
-import Interfaces.TiposMotor;
+import interfaces.TiposMotor;
 
 public class Helice implements TiposMotor{
 
